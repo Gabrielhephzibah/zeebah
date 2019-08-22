@@ -1,18 +1,26 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container-fluid">
+  	<sidebar/>
+    
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+ <script>
+ // @ is an alias to /src
+ import sidebar from '@/components/sidebar.vue';
 
-export default {
-  name: 'home',
-  components: {
-    HelloWorld
-  }
-}
-</script>
+ export default {
+   name: 'home',
+   components: {
+   	sidebar
+    
+   }
+ };
+ </script>
+
+ <style>
+ 	.container-fluid{
+ 		margin-left: -15px;
+
+ 	}
+ </style>
