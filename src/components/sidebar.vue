@@ -267,10 +267,10 @@ margin-left: 100px;
 
     methods: {
     	formatTitle: function(title){
-    		if (title.length <= 20) {
+    		if (title.length <= 18) {
     			return title;
     		}
-    		return title.substr(0, title.lastIndexOf(' ', 20))+'...'
+    		return title.substr(0, title.lastIndexOf(' ', 18))+'...'
     	}
     }
 
